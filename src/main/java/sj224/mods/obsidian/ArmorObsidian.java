@@ -74,6 +74,6 @@ public class ArmorObsidian extends ItemArmor {
 	}
 	
 
-	public static final ArmorMaterial armor_obsidian=EnumHelper.addArmorMaterial("obsid_arm", ModMain.MODID+":obsidian",28, new int[]{3, 8, 6, 3}, 7,SoundEvents.BLOCK_STONE_FALL,3);
+	public static final ArmorMaterial armor_obsidian=EnumHelper.addArmorMaterial("obsid_arm", ModMain.MODID+":obsidian",26, new int[]{3, 8, 6, 3}, 7,SoundEvents.BLOCK_STONE_FALL,3);
 
 }
