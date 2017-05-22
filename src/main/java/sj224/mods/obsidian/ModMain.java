@@ -35,6 +35,7 @@ public class ModMain
     
     public static Block g_obsid;
     public static Block o_brick;
+    public static Block o_brick_c;
     public static Block o_glass;
     
     public static int obsid_hardness;
@@ -55,6 +56,7 @@ public class ModMain
     	Blocks.OBSIDIAN.setHardness(obsid_hardness).setResistance(obsid_resist);
     	g_obsid=new BlockGeneric("glowing_obsidian").setResistance((int)(obsid_resist*0.8)).setLightLevel(13f/15);
     	o_brick=new BlockGeneric("obsidian_bricks");
+    	o_brick_c=new BlockGeneric("obsidian_chiseled");
     	o_glass=new BlockGeneric("obsidian_glass"){
     		{this.setCreativeTab(CreativeTabs.DECORATIONS);}
     		@SideOnly(Side.CLIENT)
@@ -83,13 +85,14 @@ public class ModMain
     	        return block!=this;
     	    }
 
-    	}.setHardness(Math.min(obsid_hardness,1+(int)(obsid_hardness*0.25))).setResistance((int)(obsid_resist*0.6));
+    	}.setHardness(Math.min(obsid_hardness,1+(int)(obsid_hardness*0.2))).setResistance((int)(obsid_resist*0.6));
     	
     	OreDictionary.registerOre("ingotObsidian", obsidian_ingot);
     	OreDictionary.registerOre("ingotObsidianPolished", obsidian_ingot_polished);
     	
-    	GameRegistry.addRecipe(new ItemStack(g_obsid,3),"og","go",'g',Items.GLOWSTONE_DUST,'o',obsidian_ingot_polished);
+    	GameRegistry.addRecipe(new ItemStack(g_obsid,5),"ogo","gog","ogo",'g',Blocks.GLOWSTONE,'o',obsidian_ingot_polished);
     	GameRegistry.addRecipe(new ItemStack(o_brick,4),"oo","oo",'o',obsidian_ingot);
+    	GameRegistry.addRecipe(new ItemStack(o_brick_c,4),"oo","oo",'o',obsidian_ingot_polished);
     	GameRegistry.addRecipe(new ItemStack(o_glass,5),"gog","ogo","gog",'o',obsidian_ingot,'g',Blocks.GLASS);
     	
     	GameRegistry.addRecipe(ob_helm.stack_ench,"ooo","o o",'o',obsidian_ingot_polished);
@@ -104,7 +107,7 @@ public class ModMain
     	
     	
     	
-    	GameRegistry.addRecipe(new ItemStack(obsidian_ingot_polished),"ob","bo",'o',obsidian_ingot,'b',Items.BLAZE_POWDER);
+    	GameRegistry.addShapelessRecipe(new ItemStack(obsidian_ingot_polished),obsidian_ingot,Items.BLAZE_POWDER);
     	
     	GameRegistry.addSmelting(new ItemStack(Blocks.OBSIDIAN),new ItemStack(obsidian_ingot),1);
     	
