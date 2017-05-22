@@ -1,0 +1,11 @@
+item.obsidian_helmet.name=Obsidian Helmet
+item.obsidian_chestplate.name=Obsidian Chestplate
+item.obsidian_leggings.name=Obsidian Greaves
+item.obsidian_boots.name=Obsidian Peg-leg
+
+item.obsidian_ingot.name=Rock o' Tears Doubloon
+item.obsidian_ingot_polished.name=Shiny Rock o' Tears Doubloon
+
+tile.glowing_obsidian.name=Glowin' Rock o' Tears
+tile.obsidian_bricks.name=Rock o' Tears Bricks
+tile.obsidian_glass.name=Sturdy Crystal

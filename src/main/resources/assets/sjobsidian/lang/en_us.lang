@@ -1,0 +1,11 @@
+item.obsidian_helmet.name=Obsidian Helmet
+item.obsidian_chestplate.name=Obsidian Chestplate
+item.obsidian_leggings.name=Obsidian Leggings
+item.obsidian_boots.name=Obsidian Boots
+
+item.obsidian_ingot.name=Obsidian Ingot
+item.obsidian_ingot_polished.name=Polished Obsidian Ingot
+
+tile.glowing_obsidian.name=Glowing Obsidian
+tile.obsidian_bricks.name=Obsidian Bricks
+tile.obsidian_glass.name=Obsidian Glass
